@@ -1,0 +1,16 @@
+- name : calculator-app
+  hosts : local
+  tasks :
+    - name : Pull latest docker image
+      docker_image :
+        name : vvj23/calculator-app
+        source : pull
+
+    - name : Run calculator-app container
+      docker_container :
+        name : calculator-app
+        image : vvj23/calculator-app
+        state : started
+        restart_policy : always
+        tty : yes
+        interactive : yes
