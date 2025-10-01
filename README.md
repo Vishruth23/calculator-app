@@ -16,3 +16,5 @@ Run the tests:
 ```bash
 pytest -q
 ```
+
+This is a change made in README.md to check if the pipeline is working as expected.
