@@ -1,20 +1,31 @@
-# CS816 - Scientific Calculator with DevOps
+# Scientific Calculator - DevOps Pipeline Project
 
-A menu-driven scientific calculator with:
-- Square root (√x)
-- Factorial (!x)
-- Natural logarithm (ln(x))
-- Power (x^b)
+This project demonstrates a complete CI/CD DevOps pipeline using a simple Scientific Calculator application built with Python.  
+The pipeline automates testing, Dockerization, and deployment using Jenkins and Ansible.
 
-## Usage
-Run the calculator:
-```bash
-python main.py
-```
+---
 
-Run the tests:
-```bash
-pytest -q
-```
+## Features
+- Basic scientific operations: square root, factorial, logarithm, power  
+- Unit testing with pytest  
+- Containerized using Docker  
+- Automated CI/CD pipeline with Jenkins  
+- Deployment managed by Ansible
 
-This is the 5th change made in README.md to check if the pipeline is working as expected. Updated webhook link.
+---
+
+## Tools Used
+- Python – Application development  
+- Git & GitHub – Source code management  
+- Pytest – Unit testing framework  
+- Docker – Containerization  
+- Jenkins – Continuous Integration & Delivery  
+- Ansible – Automated deployment
+
+---
+
+## Pipeline Overview
+1. Code pushed to GitHub triggers Jenkins.  
+2. Jenkins runs unit tests using Pytest.  
+3. Docker image is built and pushed to Docker Hub.  
+4. Ansible pulls the latest image and deploys the container.
