@@ -30,4 +30,4 @@ The pipeline automates testing, Dockerization, and deployment using Jenkins and 
 3. Docker image is built and pushed to Docker Hub.  
 4. Ansible pulls the latest image and deploys the container.
 
-Push to verify if pipeline is working as expected.
+Push to verify if pipeline is working as expected-2.
